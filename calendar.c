@@ -10,29 +10,29 @@ int main()
 	{
 		if(i==2)
 		{
-           		if(!(year%4)&&(year%100)||!(year%400)) // 윤년
+           		if((year%4)&&!(year%100)||(year%400)) // 윤년
            			DAYS_OF_MONTH=29;
          		else
 				DAYS_OF_MONTH=28;
 		}
-        else if(i==1||i==3||i==5||i==7||i==8||i==10||i==12)
-            DAYS_OF_MONTH=31;
-        else
-            DAYS_OF_MONTH=30;
+        	else if(i==1||i==3||i==5||i==7||i==8||i==10||i==12)
+            		DAYS_OF_MONTH=31;
+        	else
+            		DAYS_OF_MONTH=30;
 
-        if(i==1||i==2)
-        {
-            year--;
-            i+=12;
-        }
+        	if(i==1||i==2)
+        	{
+            		year--;
+            		i+=12;
+        	}
 		
-        START_DAY=((int)(21*(year/100)/4)+(int)(5*(year%100)/4)+(int)(26*(i+1)/10)+1-1)%7; // 제라의 공식
+        	START_DAY=((int)(21*(year/100)/4)+(int)(5*(year%100)/4)+(int)(26*(i+1)/10)+1-1)%7; // 제라의 공식
 
-        if(i==13||i==14)
-        {
-            year++;
-            i-=12;
-        }
+        	if(i==13||i==14)
+        	{
+        	    year++;
+        	    i-=12;
+        	}
 
 		printf("\n____________<%2d 월>____________\n",i);
 		printf("===============================\n");
