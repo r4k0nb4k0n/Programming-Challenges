@@ -1,5 +1,5 @@
 #include <cstdio> // scanf, printf.
-#include <string.h> // memset.
+#include <cstring> // memset.
 #include <algorithm> // min.
 
 using namespace std;
