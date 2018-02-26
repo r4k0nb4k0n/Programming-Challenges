@@ -4,29 +4,16 @@
 #include <vector>
 using namespace std;
 
-vector<int> series;
-queue<char> out;
-stack<int> st;
+vector<int> series; // 입력 수열
+queue<char> out; // 출력 버퍼
+stack<int> st; // 스택 시뮬레이션
 int i, n, m=1;
-bool is_possible=true;
-/*bool is_possible(int first, int second, int third){
-    if(first > second && second < third && first > third)
-        return false;
-    return true;
-}*/
 
 int main(){
     cin >> n;
     series.resize(n);
-    for(i=0; i<n; i++) cin >> series[i];
-    // 입력
-    /*for(i=2; i<n; i++){
-        if(!is_possible(series[i-2], series[i-1], series[i])){
-            cout << "NO";
-            return 0;
-        }
-    }*/
-    for(i=0; i<n; i++){
+    for(i=0; i<n; i++) cin >> series[i]; // 수열 입력받기
+    for(i=0; i<n; i++){ // 스택으로 입력된 수열 만들기
         int gap = series[i] - m;
         if(gap > 0){
             do{
@@ -38,7 +25,7 @@ int main(){
             while(!st.empty() && st.top() != series[i]){
                 st.pop(); out.push('-');
             }
-            if(st.empty()){
+            if(st.empty()){ // 입력된 수열을 만들 수 없는 경우
                 cout << "NO";
                 return 0;
             }
@@ -50,7 +37,7 @@ int main(){
             out.push('-');
         }
     }
-    while(!out.empty()){
+    while(!out.empty()){ // 출력 버퍼 비우기
         cout << out.front() << "\n";
         out.pop();
     }   
