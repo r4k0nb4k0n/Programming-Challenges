@@ -1,6 +1,7 @@
 # [Advent of Code](https://adventofcode.com/)
 ### Progress
 
+2018-11-04 Solved [`2017 Day 4 High-Entropy Passphrases`](./2017/Day_4_High-Entropy_Passphrases/).  
 2018-11-03 Solved [`2017 Day 3 Spiral Memory`](./2017/Day_3_Spiral_Memory). Need to remove code duplication.  
 2018-10-27 Solved [`2017 Day 2 Corruption Checksum`](./2017/Day_2_Corruption_Checksum).  
 2018-10-27 Solved [`2017 Day 1 Inverse Captcha`](./2017/Day_1_Inverse_Captcha).  
