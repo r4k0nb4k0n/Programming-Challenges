@@ -15,14 +15,14 @@ long long memo[MAX+1][MAX];
 int binomial_coefficient(int n, int k){
 	if(k > n-k) return binomial_coefficient(n, n-k);
 	
-	# Base condition
+	// Base condition
 	if(k == 0 || n == k) return 1;
 	
-	# Memoization
+	// Memoization
 	long long& ret = memo[n][k];
 	if(ret != -1) return ret;
 	
-	# Pascal's rule
+	// Pascal's rule
 	ret = (binomial_coefficient(n-1, k-1) % MOD + binomial_coefficient(n-1, k) % MOD) % MOD;
 	// cout << n << " " << k << " " << ret << "\n";
 	return ret % MOD;
