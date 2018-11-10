@@ -1,6 +1,7 @@
 # [Advent of Code](https://adventofcode.com/)
 ### Progress
 
+2018-11-11 Solved [`2017 Day 6 Memory Reallocation`](./2017/Day_6_Memory_Reallocation/).  
 2018-11-08 Solved [`2017 Day 5 A Maze of Twisty Trampolines, All Alike`](./2017/Day_5_A_Maze_of_Twisty_Trampolines_All_Alike/).  
 2018-11-04 Solved [`2017 Day 4 High-Entropy Passphrases`](./2017/Day_4_High-Entropy_Passphrases/).  
 2018-11-03 Solved [`2017 Day 3 Spiral Memory`](./2017/Day_3_Spiral_Memory). Need to remove code duplication.  
